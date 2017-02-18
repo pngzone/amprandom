@@ -5,7 +5,8 @@
 <script>
    function setCanonical() 
 	{
-		document.getElementById("gplusone").setAttribute("data-href", "https://amprandom.blogspot.in/p/random-tyms.html");
+		var x = document.getElementById("gplusone").setAttribute("data-href", getQueryVariable("url"));
+		window[x].call();
    	}
    function getQueryVariable(variable)
 	{
