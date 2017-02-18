@@ -5,8 +5,7 @@
 <script>
    function setCanonical() 
 	{
-		var x = document.getElementById("gplusone").setAttribute("data-href", getQueryVariable("url"));
-		window[x].call();
+		this.setAttribute("data-href", getQueryVariable("url"));
    	}
    function getQueryVariable(variable)
 	{
